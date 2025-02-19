@@ -1,0 +1,15 @@
+{
+  "name": "frontend-service",
+  "version": "1.0.0",
+  "description": "Sample frontend application",
+  "main": "index.js",
+  "scripts": {
+    "dev": "echo 'Development server would start here'",
+    "build": "echo 'Build script would run here'",
+    "test": "echo 'Tests would run here'"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+} 
