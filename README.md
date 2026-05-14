@@ -1,12 +1,27 @@
 # Sample Monorepo
 
-This is a sample monorepo structure to demonstrate Port's monorepo support.
+> Source: sample-monorepo / README.md
 
-## Structure
+A reference monorepo demonstrating how Port ingests documentation from multiple services within a single repository.
 
-- `apps/frontend-service`: A sample frontend application
-- `apps/backend-service`: A sample backend service
+## Repository Structure
+
+```
+apps/
+  backend-service/     # Node.js API server
+    docs/
+      runbook.md       # Operational runbook
+      architecture.md  # System design
+  frontend-service/    # React web application
+```
 
 ## Getting Started
 
-Each application in the `apps` directory has its own setup instructions in its respective README. 
+```bash
+npm install
+npm run dev
+```
+
+## Documentation
+
+Each service maintains its own `docs/` folder. Port's TechDocs integration ingests these as separate `techDoc` entities, scoped to the relevant service via the repository relation.
